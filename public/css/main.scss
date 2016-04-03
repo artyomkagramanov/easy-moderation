@@ -1,0 +1,63 @@
+@import "modal";
+
+body, html{
+	height:100%;
+}
+.site-content{
+	min-height:calc(100% - 360px );
+}
+.image{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.inline-checkbox {
+	input[type='checkbox'] {
+		margin-top: 4px;
+	}
+}
+
+.store{
+	.title{
+		color:#46b8da;
+	}
+
+	.block{
+		font-size: 18px;
+		background-color: #DBDBDB;
+		text-align: center;
+		padding-top: 10px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		overflow: hidden;
+
+		.sub-block{
+			padding-top:15px;
+			padding-bottom: 15px;
+
+		}
+		.sub-block:last-child{
+			padding-bottom:30px;
+		}
+	}
+	.buy-now{
+		margin-top: -30px;
+		text-align: center;
+	}
+}
+.contact-me{
+	.title-input{
+		font-size:25px;
+	}
+}
+
+.footer{
+	background-color: #adadad;
+	min-height: 120px;
+	width:100%;
+	padding:30px 0 30px 0;
+}
+.home{
+	text-align:center;
+}

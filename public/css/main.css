@@ -1,0 +1,193 @@
+.custom-modal {
+  z-index: 8000 !important; }
+  .custom-modal .ngdialog-content {
+    width: 50% !important;
+    padding: 0 !important; }
+    .custom-modal .ngdialog-content .panel {
+      margin-bottom: 0 !important; }
+    .custom-modal .ngdialog-content .panel-body {
+      padding-top: 0 !important; }
+
+.email-template-modal .ngdialog-content, .blocking-modal .ngdialog-content {
+  width: 40% !important; }
+
+.new-price .ngdialog-content {
+  width: 30% !important; }
+
+.custom-modal.model-dialog .model-release-file {
+  padding: 3px 9px; }
+
+@media (max-width: 920px) {
+  .custom-modal .ngdialog-content {
+    width: 70% !important; } }
+@media (max-width: 680px) {
+  .custom-modal .ngdialog-content {
+    width: 96% !important; } }
+body, html {
+  height: 100%; }
+
+.site-content {
+  min-height: calc(100% - 360px ); }
+
+.image {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.inline-checkbox input[type='checkbox'] {
+  margin-top: 4px; }
+
+.store .title {
+  color: #46b8da; }
+.store .block {
+  font-size: 18px;
+  background-color: #DBDBDB;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  overflow: hidden; }
+  .store .block .sub-block {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .store .block .sub-block:last-child {
+    padding-bottom: 30px; }
+.store .buy-now {
+  margin-top: -30px;
+  text-align: center; }
+
+.contact-me .title-input {
+  font-size: 25px; }
+
+.footer {
+  background-color: #adadad;
+  min-height: 120px;
+  width: 100%;
+  padding: 30px 0 30px 0; }
+
+.home {
+  text-align: center; }
+
+.public-chat .chat-conversation {
+  position: initial;
+  width: auto;
+  background: #fff;
+  outline: 1px solid #dedede;
+  display: block; }
+  .public-chat .chat-conversation .conversation-header {
+    position: relative;
+    padding: 20px 24px;
+    font-size: 14px;
+    color: #979898;
+    border-bottom: 1px solid #ededed; }
+    .public-chat .chat-conversation .conversation-header small {
+      color: rgba(151, 152, 152, 0.6);
+      font-size: 12px;
+      padding-left: 8px; }
+  .public-chat .chat-conversation .conversation-header:after {
+    top: 10px; }
+  .public-chat .chat-conversation .conversation-body {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    height: 380px; }
+    .public-chat .chat-conversation .conversation-body > li {
+      padding: 0 30px;
+      margin: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #f1f1f1;
+      color: #979898; }
+      .public-chat .chat-conversation .conversation-body > li .user {
+        font-weight: 700;
+        color: #7d7f7f; }
+      .public-chat .chat-conversation .conversation-body > li .time {
+        float: right;
+        color: rgba(151, 152, 152, 0.8);
+        font-size: 10px;
+        position: relative;
+        top: 3px; }
+      .public-chat .chat-conversation .conversation-body > li p {
+        padding-top: 5px; }
+    .public-chat .chat-conversation .conversation-body > li.odd {
+      background: rgba(250, 250, 250, 0.55); }
+    .public-chat .chat-conversation .conversation-body > li:last-child {
+      border-bottom: 0; }
+  .public-chat .chat-conversation .conversation-body::-webkit-scrollbar {
+    width: 5px; }
+  .public-chat .chat-conversation .conversation-body::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: white; }
+  .public-chat .chat-conversation .conversation-body::-webkit-scrollbar-thumb {
+    background-color: #dedede; }
+  .public-chat .chat-conversation .chat-textarea {
+    padding: 20px 24px;
+    background: #fafafa;
+    position: relative;
+    border-top: 1px solid #ededed;
+    padding: 0; }
+    .public-chat .chat-conversation .chat-textarea textarea {
+      background: #fafafa;
+      border: 0;
+      max-height: 100px !important;
+      padding-right: 35px;
+      padding-top: 10px;
+      height: 32px;
+      resize: none; }
+    .public-chat .chat-conversation .chat-textarea textarea::-moz-placeholder {
+      color: rgba(151, 152, 152, 0.85);
+      opacity: 1; }
+    .public-chat .chat-conversation .chat-textarea textarea:-ms-input-placeholder {
+      color: rgba(151, 152, 152, 0.85); }
+    .public-chat .chat-conversation .chat-textarea textarea::-webkit-input-placeholder {
+      color: rgba(151, 152, 152, 0.85); }
+    .public-chat .chat-conversation .chat-textarea textarea::-webkit-input-placeholder {
+      color: rgba(151, 152, 152, 0.85); }
+    .public-chat .chat-conversation .chat-textarea textarea:-moz-placeholder {
+      color: rgba(151, 152, 152, 0.85); }
+    .public-chat .chat-conversation .chat-textarea textarea::-moz-placeholder {
+      color: rgba(151, 152, 152, 0.85); }
+    .public-chat .chat-conversation .chat-textarea textarea:-ms-input-placeholder {
+      color: rgba(151, 152, 152, 0.85); }
+    .public-chat .chat-conversation .chat-textarea textarea::-webkit-scrollbar {
+      width: 5px; }
+    .public-chat .chat-conversation .chat-textarea textarea::-webkit-scrollbar-track {
+      width: 5px;
+      background-color: #ededed; }
+    .public-chat .chat-conversation .chat-textarea textarea::-webkit-scrollbar-thumb {
+      background-color: #cccccc; }
+  .public-chat .chat-conversation .chat-textarea:after {
+    content: '\f075';
+    font-family: fontawesome;
+    color: #979898;
+    right: 15px;
+    top: 10px;
+    font-size: 15px;
+    position: absolute; }
+.public-chat .chat-conversation.is-open {
+  display: block; }
+
+#chat .chat-conversation .conversation-header:after {
+  top: 10px; }
+
+@media (max-width: 767px) {
+  .public-chat .chat-conversation, .public-chat.fixed .chat-conversation {
+    position: fixed;
+    width: auto;
+    left: 0;
+    right: 0;
+    top: 0 !important;
+    bottom: 0;
+    margin: 10px;
+    overflow: auto; }
+    .public-chat .chat-conversation .conversation-body, .public-chat.fixed .chat-conversation .conversation-body {
+      height: auto;
+      max-height: 450px; }
+  .public-chat .chat-conversation::-webkit-scrollbar, .public-chat.fixed .chat-conversation::-webkit-scrollbar {
+    width: 5px; }
+  .public-chat .chat-conversation::-webkit-scrollbar-track, .public-chat.fixed .chat-conversation::-webkit-scrollbar-track {
+    width: 5px;
+    background-color: #343a45; }
+  .public-chat .chat-conversation::-webkit-scrollbar-thumb, .public-chat.fixed .chat-conversation::-webkit-scrollbar-thumb {
+    background-color: #4a5262; } }

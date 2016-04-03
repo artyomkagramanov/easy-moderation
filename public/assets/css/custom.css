@@ -1,0 +1,284 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+@font-face {
+    src: url(./fonts/GYkAnzJvKnl5kOgLY6RO-w.woff2); /* Путь к файлу со шрифтом */
+}
+
+body {
+}
+
+a {
+}
+
+.sidebar-menu .main-menu ul.show-ul {
+	display: block;
+}
+
+.sidebar-menu .main-menu a>i.pull-right {
+	margin-right: 0px;
+}
+
+.stateDeactive{
+	opacity: .4;
+	transition : opacity 2s;
+}
+
+.wan {
+	opacity: 0.6;
+}
+
+a:focus{
+	text-decoration: none!important;
+}
+
+input[type=checkbox] {
+	cursor: pointer;
+}
+
+label {
+	cursor: pointer;
+}
+
+.trash-icon {
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	height: 39px;
+	width: 39px;
+	vertical-align: middle;
+	line-height: 39px;
+	text-align: center;
+	cursor: pointer;
+	font-size: inherit;
+	color: #B4B4B4;
+}
+
+li.active .trash-icon {
+	color: #595959;
+}
+
+.trash-icon:hover {
+	color: #000000;
+}
+
+li.active .trash-icon:hover {
+	color: #000000;
+}
+
+.created_at {
+	width: 150px;
+}
+
+.action {
+	width: 114px;
+}
+
+.vertical-resize {
+	resize: vertical;
+}
+
+.image_td {
+	width: 100px;
+}
+
+.small_desc {
+	color: #909090;
+	font-size: 12px;
+}
+
+.clear {
+	clear: both;
+	margin: 0px;
+}
+
+.photoset_description {
+	max-width: 60%;
+}
+
+.image_name {
+	width: 100%;
+}
+
+.image_name:focus {
+	outline: none;
+}
+
+.placeholder {
+	color: #B0B0B0 !important;
+}
+
+.text-panels .heading-text {
+	float: left;
+}
+
+.text-panels .panel-options {
+	float: right;
+}
+
+.text-panels .panel-options a , .text-panels .panel-options h3 {
+	float: right;
+}
+
+.text-panels .panel-options h3 {
+	margin-right: 30px;
+	margin-top: 0px;
+}
+
+.text-panels .heading-text small {
+	font-size: 11px;
+}
+
+.cbp_tmtimeline.padding-left {
+	padding-left: 15px;
+}
+
+.user-activity-select .selectboxit-option-anchor {
+	margin-left: 0;
+}
+
+.members-custom-table .action-links span {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.members-custom-table .action-links i {
+	font-size: 11px;
+}
+
+
+
+/* Custom classes */
+
+.relative {
+	position: relative!important;
+}
+.position-initial {
+	position: initial !important;
+}
+.bottom-border {
+	border-bottom: 2px solid #f5f5f5;
+	padding-bottom: 20px;
+}
+.no-border {
+	border: none!important;
+}
+
+.font-size-14 {
+	font-size: 14px!important;
+}
+
+.no-padding {
+	padding: 0!important;
+}
+
+.uploaded-image {
+	margin-top: 15px;
+}
+
+.bottom-margin {
+	margin-bottom: 20px !important;
+}
+
+.checkbox-padding {
+	padding-top: 7px;
+}
+
+.panel-buttons {
+	margin-top: 15px;
+}
+
+.panel-buttons a {
+	margin-left: 5px;
+}
+
+.panel .add-new-heading {
+	margin-bottom: 20px;
+}
+
+.add-new-heading h3 {
+	margin-top: 6px;
+}
+
+.add-new-heading a {
+	margin-bottom: 0;
+	margin-left: 5px;
+}
+
+.action-big {
+	width: 162px;
+}
+
+.active-big-btns {
+	display: inline-block;
+	padding: 0 1px;
+}
+
+.action-inactive {
+	width: 117px;
+}
+
+.send-email-form-group #cke_body{
+	margin-top: 0;
+}
+
+.login-notifications {
+	margin-right: 10px!important;
+}
+
+.text-link:hover {
+	text-decoration: underline;
+}
+
+/* login page */
+
+.login-page {
+	padding-top: 60px;
+}
+
+.login-page .login-header {
+	margin-bottom: 40px;
+}
+
+ .login-page .top_text {
+ 	margin-bottom: 20px;
+ }
+
+.login-page form.login-form {
+	padding: 0 15px;
+}
+
+.login-page .external-login {
+	padding: 0 15px;
+}
+
+.login-page .or_container span {
+	margin-top: 9px;
+	display: block;
+}
+
+.login-page .border_container {
+	border-right: 1px solid #ffffff;
+	min-height: 300px;
+}
+
+/* sign up */
+
+.sign-up-page {
+	padding-top: 10px;
+}
+
+.sign-up-page .login-form .login-footer {
+	margin: 20px 0;
+}
+
+.sign-up-page .login-footer .checkbox label.error {
+	color: rgba(204,63,68,.5);
+	padding-left: 0px;
+}
+
+.sign-up-page .border_container {
+	min-height: 400px;
+}

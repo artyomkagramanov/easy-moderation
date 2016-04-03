@@ -1,0 +1,51 @@
+.custom-modal {
+	z-index: 8000 !important;
+
+	.ngdialog-content {
+		width: 50% !important;
+		padding: 0 !important;
+
+		.panel {
+			margin-bottom: 0 !important;
+		}
+
+		.panel-body {
+			padding-top: 0 !important;
+		}
+	}
+}
+
+.email-template-modal , .blocking-modal {
+	.ngdialog-content {
+		width: 40% !important;
+	}
+}
+
+.new-price {
+	.ngdialog-content {
+		width: 30% !important;
+	}
+}
+
+.custom-modal.model-dialog {
+	.model-release-file {
+		padding: 3px 9px;
+	}
+}
+
+
+@media (max-width: 920px) {
+	.custom-modal {
+		.ngdialog-content {
+			width: 70% !important;
+		}
+	}
+}
+
+@media (max-width: 680px) {
+	.custom-modal {
+		.ngdialog-content {
+			width: 96% !important;
+		}
+	}
+}
