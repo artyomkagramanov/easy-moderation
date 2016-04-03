@@ -13,8 +13,9 @@ class TagsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index( $resourse )
     {
+
         return view( 'tags.index' );
     }
 
