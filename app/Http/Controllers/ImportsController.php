@@ -15,10 +15,20 @@ class ImportsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index( $resourse )
+    public function index( Request $request, $segment )
     {
-        // dd($resourse);
         return view( 'import.index' );
+    }
+
+    public function updateTag( $segment, Request $request )
+    {
+        // dd( $request->all() );
+        $tags = $request->get( 'tags', '' );
+        $photo_id = $request->get( 'photo_id', '' );
+        $table_name = $segment . '_photos';
+        // dd( $tags, $photo_id, $table_name );
+        DB::table( $table_name )->where( 'id', $photo_id )->update( [ 'tags' => $tags ] );
+        return response()->json( 'success' );
     }
 
     /**
@@ -39,6 +49,7 @@ class ImportsController extends Controller
      */
     public function store( $segment, Request $request)
     {
+
         
         $data = $request->get( 'data', '');
         $tags = $request->get( 'tags', '' );

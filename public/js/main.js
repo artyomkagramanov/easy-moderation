@@ -1,4 +1,39 @@
 $(document).ready(function(){
+	$('.image-remove' ).click(function(e){
+		e.preventDefault();
+		var elem = $(this);
+		bootbox.confirm("Are you sure?", function(result) {
+  			if( result ) {
+  				var id = elem.attr('data-id');
+  				// alert( id );	
+  			}
+  			
+
+		});
+	});
+
+	$('.image-tags').on('blur', function(e){
+		e.preventDefault();
+		var self = $(this);
+		var tags = self.val();
+		var id = self.attr( 'data-id' );
+		var base_url = window.location.href;
+		if( base_url.indexOf( '?' ) != -1 ) {
+			var arr = base_url.split( '?' );
+			base_url = arr[0];
+		}
+		var csrf_value = $("input[name='_token']").attr('value');
+		$.ajax({
+		  type: "POST",
+		  url: base_url + '/update-tags',
+		  data: {photo_id:id, tags:tags, _token:csrf_value},
+		  success: function(data){
+		  	console.log(data);
+		  },
+		});
+
+	});
+
 
 	/*
 	 * User verification ( verifid/unverified )

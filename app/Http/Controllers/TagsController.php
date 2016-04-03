@@ -15,7 +15,6 @@ class TagsController extends Controller
      */
     public function index( $resourse )
     {
-
         return view( 'tags.index' );
     }
 

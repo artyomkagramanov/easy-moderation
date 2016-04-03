@@ -13,14 +13,21 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
     <link rel="stylesheet" href="/assets/css/fonts/linecons/css/linecons.css">
     <link rel="stylesheet" href="/assets/css/fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap.css"> -->
     <link rel="stylesheet" href="/assets/css/xenon-core.css">
     <link rel="stylesheet" href="/assets/css/xenon-forms.css">
     <link rel="stylesheet" href="/assets/css/xenon-components.css">
     <link rel="stylesheet" href="/assets/css/xenon-skins.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
-    <script src="/assets/js/jquery-1.11.1.min.js"></script>
+    <!-- <script src="/assets/js/jquery-1.11.1.min.js"></script> -->
+    <script src="/js/photo-gallery.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/bootbox.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -161,7 +168,7 @@
 
 
     <!-- Bottom Scripts -->
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <!-- <script src="/assets/js/bootstrap.min.js"></script> -->
     <script src="/assets/js/TweenMax.min.js"></script>
     <script src="/assets/js/resizeable.js"></script>
     <script src="/assets/js/joinable.js"></script>
