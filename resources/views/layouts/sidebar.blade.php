@@ -37,31 +37,31 @@
                 
         <ul id="main-menu" class="main-menu">
             <li class=" @if(Request::is('/') ) active @endif">
-                <a href="{!! url('/') !!}">
+                <a href="{!! url( request()->segment(1) . '/') !!}">
                     <i class="fa-file-image-o"></i>
                     <span class="title">Photos</span>
                 </a>
             </li>
             <li class=" @if(Request::is('dashboard') ) active @endif">
-                <a href="{!! url('/dashboard') !!}">
+                <a href="{!! url( request()->segment(1) . '/dashboard') !!}">
                     <i class="linecons-desktop"></i>
                     <span class="title">Dashboard</span>
                 </a>
             </li>
             <li class=" @if(Request::is('export*')) active @endif">
-                <a href="{!! url('/export') !!}">
+                <a href="{!! url( request()->segment(1) . '/export') !!}">
                     <i class="fa fa-arrow-up"></i>
                     <span class="title">Export</span>
                 </a>
             </li>
             <li class=" @if(Request::is('import*')) active @endif">
-                <a href="{!! url('/import') !!}">
+                <a href="{!! url( request()->segment(1) . '/import') !!}">
                     <i class="fa fa-arrow-down"></i>
                     <span class="title">Import</span>
                 </a>
             </li>
             <li class=" @if(Request::is('tags*')) active @endif">
-                <a href="{!! url('/tags') !!}">
+                <a href="{!! url( request()->segment(1) . '/tags'  ) !!}">
                     <i class="fa fa-random"></i>
                     <span class="title">Tags</span>
                 </a>

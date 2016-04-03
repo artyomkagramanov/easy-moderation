@@ -10,10 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::group(['middleware' => 'web'], function() {
-	Route::get('/', 'HomeController@index');
+Route::group(['middleware' => 'web', 'prefix' => '{resourse}'], function() {
     Route::get('/dashboard', 'DashboardController@index');
+    Route::get('/', 'PhotosController@index');
     Route::get('/import', 'ImportsController@index');
+	Route::post('/import', 'ImportsController@store');
+	Route::post('/update-tags', 'ImportsController@updateTag' );
     Route::get('/export', 'ExportsController@index');
     Route::get('/tags', 'TagsController@index');
 });

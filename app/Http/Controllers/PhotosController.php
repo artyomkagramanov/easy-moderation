@@ -3,19 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
 use App\Http\Requests;
 
-class TagsController extends Controller
+class PhotosController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index( $resourse )
+    public function index( $segment )
     {
-        return view( 'tags.index' );
+        $pagination_count = env( "PAGINATION_COUNT", 200 );
+        $table_name = $segment . '_photos';
+        $photos = DB::table( $table_name )->paginate( $pagination_count );
+        // dd( $photos );
+        return view( 'photos.index', [ 'photos' => $photos ]);
     }
 
     /**
