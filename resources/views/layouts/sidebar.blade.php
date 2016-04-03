@@ -14,7 +14,7 @@
                 </a>
 
                 <a href="{!! url('/') !!}" class="logo-collapsed">
-                    <img src="/assets/images/ams-logo.png" width="40" alt=""/>
+                    <img src="/assets/images/easy_logo.png" width="40" alt=""/>
                 </a>
             </div>
 
