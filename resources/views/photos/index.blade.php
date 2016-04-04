@@ -32,11 +32,19 @@
         float:right;
         text-align:right;
     }
+
     .center-cropped {
-        object-fit: none; /* Do not scale the image */
+        object-fit: cover; /* Do not scale the image */
         object-position: center; /* Center the image within the element */
-        height: 150px !important;
-        width: 150px;
+        height: 256px !important;
+        width: 256px;
+    }
+
+    .center-fit {
+        object-fit: contain; /* Do not scale the image */
+        object-position: center; /* Center the image within the element */
+        height: 256px !important;
+        width: 256px;
     }
     /*override modal for demo only*/
     .modal-dialog {
@@ -55,7 +63,7 @@
         }
     }
 </style>
-
+ 
 @section('content')
     <div class="row text-center">
         <div class="col-md-12">
@@ -66,6 +74,17 @@
                     <h3 class="panel-title"><i class="linecons-user"></i>Photos</h3>
 
                     <div class="panel-options">
+                        <a href="#" data-toggle="squash">
+                            &#9830;
+                        </a>
+                        <a href="#" data-toggle="contain">
+                            &#9827;
+                        </a>
+                        <a href="#" onclick="
+                                    alert('s');
+                         ">
+                            &#9824;
+                        </a>
                         <a href="#" data-toggle="panel">
                             <span class="collapse-icon">&ndash;</span>
                             <input type="hidden" name='_token' value={{csrf_token()}}>
@@ -80,7 +99,7 @@
                     <ul class="row">
                         @foreach( $photos as $photo )
                             <li class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
-                                <img class="img-thumbnail center-cropped" data-toggle="tooltip" title={{$photo->tags == "" ? "Empty" : $photo->tags}} src={!! $photo->url !!} >
+                                <img class="img-thumbnail center-fit" data-toggle="tooltip" title={{$photo->tags == "" ? "Empty" : $photo->tags}} src={!! $photo->url !!} >
                                 <div>
                                     <form role="form">
                                         <div class="form-group">
