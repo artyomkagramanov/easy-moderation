@@ -66,12 +66,26 @@
  
 @section('content')
     <div class="row text-center">
+        @if (isset($colors))
+        <div class="col-md-12">
+            <form action="/color" method="GET">
+                <select name="filter">
+                    <option value="">- ALL -</option>
+                    @foreach ( $colors as &$color )
+                        <option value="{{$color}}" {{$color==$filter ? 'selected':''}} >{{$color}}</option>
+                    @endforeach
+                </select>
+                <input name="page" value="{{$photos->currentPage()}}" type="hidden" />
+                <input type="submit" value="Apply"/>
+            </form>
+        </div>
+        @endif
         <div class="col-md-12">
 
             <div class="panel panel-default unverified">
                 <div class="error alert alert-danger alert-dismissible" role="alert" style="display:none"></div>
                 <div class="panel-heading">
-                    <h3 class="panel-title"><i class="linecons-user"></i>Photos</h3>
+                    <h3 class="panel-title"><i class="linecons-user"></i>Photos ({{$photos->total()}}) </h3>
 
                     <div class="panel-options">
                         <a href="#" data-toggle="squash">
@@ -117,7 +131,7 @@
                 </div>
             </div>
             <div  class="center-block">
-                {!! $photos->render() !!}
+                {!! isset($filter) ? $photos->appends(['filter' => $filter])->render() : $photos->render()  !!}
             </div>
         </div>
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
