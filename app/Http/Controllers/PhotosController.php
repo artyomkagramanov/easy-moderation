@@ -39,7 +39,8 @@ class PhotosController extends Controller
                 'thyme',
                 'violet',
                 'white',
-                'yellow');
+                'yellow',
+                'x');
             if ($filter) {
                 $photos = DB::table( $table_name )
                     ->where('tags', 'REGEXP', '^[[:space:]]*'.$filter.'([[:space:]]|$)')
