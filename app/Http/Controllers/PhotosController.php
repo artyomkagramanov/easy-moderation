@@ -18,30 +18,51 @@ class PhotosController extends Controller
     {
         $pagination_count = env( "PAGINATION_COUNT", 200 );
         $table_name = $segment . '_photos';
-        if ($segment == 'color') {
+        if ($segment == 'color' or $segment=='style') {
             $filter = $request->input('filter');
-            $colors = array('aqua',
-                'beige',
-                'black',
-                'black&white',
-                'blue',
-                'brown',
-                'green',
-                'grey',
-                'lime',
-                'orange',
-                'pink',
-                'pinkgrey',
-                'red',
-                'Serenity',
-                'silver',
-                'tellow',
-                'thyme',
-                'violet',
-                'white',
-                'yellow',
-                'x');
+            if ($segment == 'color') {
+                $colors = array(
+                    'aqua',
+                    'beige',
+                    'black',
+                    'black&white',
+                    'blue',
+                    'brown',
+                    'green',
+                    'grey',
+                    'lime',
+                    'orange',
+                    'pink',
+                    'red',
+                    'serenity',
+                    'thyme',
+                    'violet',
+                    'white',
+                    'yellow',
+                    'x');
+            }else {
+                $colors = array(
+                    'lineart',
+                    'drawings',
+                    'graphicart',
+                    'watercolor',
+                    'photography',
+                    'blur-effects',
+                    'artistic-effects',
+                    'monochrome-effects',
+                    'ventage-effects',
+                    'distortion-effects',
+                    'popart-effects',
+                    'hardedits-edits',
+                    'cliparts-edits',
+                    'photo&drawing-edits',
+                    'frame-edits',
+                    'mask-edits',
+                    'x');
+                $filter = explode('-', $filter)[0];
+            }
             if ($filter) {
+
                 $photos = DB::table( $table_name )
                     ->where('tags', 'REGEXP', '^[[:space:]]*'.$filter.'([[:space:]]|$)')
                     ->paginate( $pagination_count );
@@ -49,11 +70,11 @@ class PhotosController extends Controller
                 $photos = DB::table( $table_name )
                     ->paginate( $pagination_count );
             }
-            return view( 'photos.index', [ 'photos' => $photos, 'filter' => $filter, 'colors' => $colors ]);
+            return view( 'photos.index', [ 'photos' => $photos, 'filter' => $filter, 'colors' => $colors, 'segment' => $segment ]);
             //return $filter;
         } else {
             $photos = DB::table( $table_name )->paginate( $pagination_count );
-            return view( 'photos.index', [ 'photos' => $photos ]);
+            return view( 'photos.index', [ 'photos' => $photos, 'segment' => $segment ]);
         }
 
     }
