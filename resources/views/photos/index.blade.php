@@ -68,7 +68,7 @@
     <div class="row text-center">
         @if (isset($colors))
         <div class="col-md-12">
-            <form action="/color" method="GET">
+            <form action="/{{$segment}}" method="GET">
                 <select name="filter">
                     <option value="">- ALL -</option>
                     @foreach ( $colors as &$color )
@@ -80,6 +80,8 @@
             </form>
         </div>
         @endif
+
+
         <div class="col-md-12">
 
             <div class="panel panel-default unverified">
