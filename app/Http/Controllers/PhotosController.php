@@ -50,7 +50,7 @@ class PhotosController extends Controller
                     'blur-effects',
                     'artistic-effects',
                     'monochrome-effects',
-                    'ventage-effects',
+                    'vintage-effects',
                     'distortion-effects',
                     'popart-effects',
                     'hardedits-edits',
