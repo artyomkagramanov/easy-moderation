@@ -58,6 +58,7 @@ class PhotosController extends Controller
                     'hardedits-edits',
                     'cliparts-edits',
                     'photo&drawing-edits',
+                    'grid-edits',
                     'frame-edits',
                     'mask-edits',
                     'x');
