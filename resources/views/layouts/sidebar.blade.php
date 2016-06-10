@@ -1,7 +1,7 @@
 <!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
 <!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
 <!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
-<div class="sidebar-menu toggle-others fixed">
+<div class="sidebar-menu toggle-others fixed collapsed">
 
     <div class="sidebar-menu-inner">
         
