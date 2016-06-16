@@ -41,6 +41,7 @@ class PhotosController extends Controller
                     'yellow',
                     'silver',
                     'gold',
+                    'maroon',
                     'x');
             }else {
                 $colors = array(
